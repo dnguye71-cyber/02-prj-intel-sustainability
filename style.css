@@ -74,3 +74,12 @@ header {
   }
 }
 
+/* Timeline Horizontol Scroll. 
+Cards will line up in a row and scroll horizontally if needed */
+section {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  overflow-x: auto;
+}
+
