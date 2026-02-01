@@ -81,5 +81,54 @@ section {
   gap: 2rem;
   padding: 2rem;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Individual timeline cards */
+section > div {
+  min-width: 260px;
+  max-width: 340px;
+  background: #ffffff;
+  color: #0b2540;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(3, 23, 45, 0.08);
+  scroll-snap-align: start;
+  flex: 0 0 auto; /* prevent shrinking */
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+section > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(3, 23, 45, 0.12);
+}
+
+/* Card inner typography */
+section h2 {
+  font-size: 1.15rem;
+  color: #0071c5;
+  margin-bottom: 0.25rem;
+}
+
+section h3 {
+  font-size: 0.98rem;
+  margin-bottom: 0.5rem;
+  color: #03376b;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+/* Slim, friendly scrollbar for WebKit browsers */
+section::-webkit-scrollbar {
+  height: 10px;
+}
+section::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,#cfe7ff,#9ec7ff);
+  border-radius: 999px;
 }
 
