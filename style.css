@@ -132,3 +132,19 @@ section::-webkit-scrollbar-thumb {
   border-radius: 999px;
 }
 
+/* Media Inquiries: Make it Mobile Friendly */
+@media (max-width: 768px) {
+  section {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  section > div {
+    min-width: 220px;
+    max-width: 280px;
+    padding: 1rem;
+  }
+  
+  header {
+    font-size: 2rem;
+  }
+}
